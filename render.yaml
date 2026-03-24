@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: biolink-protector
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bio.py
+    autoDeploy: true
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: BROADCAST_CHAT_IDS
+        sync: false
+      - key: SPAM_WINDOW_SEC
+        sync: false
+      - key: SPAM_MAX_MSG
+        sync: false
