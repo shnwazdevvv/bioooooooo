@@ -54,7 +54,7 @@ async def start_handler(client: Client, message):
         [InlineKeyboardButton("➕ Add Me to Your Group", url=add_url)],
         [
             InlineKeyboardButton("⚙️ Configure", callback_data="back"),
-            InlineKeyboardButton("🛠️ Support", url="https://t.me/TeamsXchat"),
+            InlineKeyboardButton("🛠️ Support", url="https://t.me/iwantandroid"),
         ],
         [
             InlineKeyboardButton("📦 Source", url="https://github.com/strad-dev131/BioLink-Protector"),
